@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationIcon>Resources\minitool.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF201DAE-622F-44AB-A1DF-64711CC407C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiniTool</RootNamespace>
+    <AssemblyName>MiniTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\範例\Windows API Code Pack 1.1\binaries\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMe.Designer.cs">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="DrawBG.cs" />
+    <Compile Include="ImageFunc.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Make.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make.Designer.cs">
+      <DependentUpon>Make.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMakerNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMakerNote.Designer.cs">
+      <DependentUpon>ShowMakerNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewExif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewExif.Designer.cs">
+      <DependentUpon>ViewExif.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutMe.resx">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make.resx">
+      <DependentUpon>Make.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMakerNote.resx">
+      <DependentUpon>ShowMakerNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewExif.resx">
+      <DependentUpon>ViewExif.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\exif\exif.csproj">
+      <Project>{d3cdfbc5-c6c7-4f18-a717-752e6a099d0a}</Project>
+      <Name>exif</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\extensions\extensions.csproj">
+      <Project>{3ad7d76f-69bf-4c4b-bc86-b407a0e09160}</Project>
+      <Name>extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OO-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OO-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OO-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutMe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minitool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photography16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minitool_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photography24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPS-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPS-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_error.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
