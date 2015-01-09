@@ -7,14 +7,14 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using extensions;
-using exif;
+using SimpleExif;
 using Microsoft.WindowsAPICodePack.Shell;
 
 namespace MiniTool
 {
     public partial class ViewExif : Form
     {
-        exif.exif MyExif = new exif.exif();
+        exif MyExif = new exif();
         string[] FileNames;
         PictureBox GPSBox = new PictureBox();
         ListViewGroup ExifGroup = new ListViewGroup();

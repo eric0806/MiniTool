@@ -12,6 +12,7 @@ using extensions.Functions;
 using System.Reflection;
 using Microsoft.WindowsAPICodePack.Shell;
 using System.Threading;
+using SimpleExif;
 
 namespace MiniTool
 {
@@ -462,7 +463,7 @@ namespace MiniTool
 
         private void RunLoadImage(string SourcePath, BackgroundWorker worker, DoWorkEventArgs e) {
             Config.StatusBarText = string.Empty;
-            exif.exif exif = new exif.exif();
+            exif exif = new exif();
             worker.ReportProgress(0);
             if (SourcePath != string.Empty) {
                 if (Directory.Exists(SourcePath)) {

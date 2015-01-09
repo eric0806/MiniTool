@@ -134,9 +134,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\exif\exif.csproj">
-      <Project>{d3cdfbc5-c6c7-4f18-a717-752e6a099d0a}</Project>
-      <Name>exif</Name>
+    <ProjectReference Include="..\..\SimpleExif\SimpleExif\SimpleExif.csproj">
+      <Project>{91a58b2e-5860-4c1a-9313-24893b20be7e}</Project>
+      <Name>SimpleExif</Name>
     </ProjectReference>
     <ProjectReference Include="..\extensions\extensions.csproj">
       <Project>{3ad7d76f-69bf-4c4b-bc86-b407a0e09160}</Project>
