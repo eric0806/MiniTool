@@ -26,9 +26,9 @@
         /// </summary>
         private void InitializeComponent() {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.SourceText = new System.Windows.Forms.TextBox();
             this.TargetText = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -39,6 +39,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -50,46 +51,52 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.TargetText);
-            this.splitContainer1.Size = new System.Drawing.Size(988, 634);
-            this.splitContainer1.SplitterDistance = 329;
+            this.splitContainer1.Size = new System.Drawing.Size(1153, 792);
+            this.splitContainer1.SplitterDistance = 410;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1036, 200);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SourceText
             // 
             this.SourceText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SourceText.Location = new System.Drawing.Point(0, 0);
+            this.SourceText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SourceText.Multiline = true;
             this.SourceText.Name = "SourceText";
             this.SourceText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.SourceText.Size = new System.Drawing.Size(988, 329);
+            this.SourceText.Size = new System.Drawing.Size(1153, 410);
             this.SourceText.TabIndex = 0;
             // 
             // TargetText
             // 
             this.TargetText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TargetText.Location = new System.Drawing.Point(0, 0);
+            this.TargetText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TargetText.Multiline = true;
             this.TargetText.Name = "TargetText";
             this.TargetText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TargetText.Size = new System.Drawing.Size(988, 301);
+            this.TargetText.Size = new System.Drawing.Size(1153, 377);
             this.TargetText.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(888, 160);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Make
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 634);
+            this.ClientSize = new System.Drawing.Size(1153, 792);
             this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Make";
             this.Text = "Make";
             this.splitContainer1.Panel1.ResumeLayout(false);

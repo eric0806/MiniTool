@@ -115,7 +115,8 @@
             this.btnRefresh.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Image = global::MiniTool.Properties.Resources.refresh;
-            this.btnRefresh.Location = new System.Drawing.Point(8, 77);
+            this.btnRefresh.Location = new System.Drawing.Point(9, 97);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(24, 24);
             this.btnRefresh.TabIndex = 4;
@@ -129,7 +130,8 @@
             this.btnSelectAll.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectAll.Image = global::MiniTool.Properties.Resources.check;
-            this.btnSelectAll.Location = new System.Drawing.Point(43, 77);
+            this.btnSelectAll.Location = new System.Drawing.Point(50, 97);
+            this.btnSelectAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSelectAll.Name = "btnSelectAll";
             this.btnSelectAll.Size = new System.Drawing.Size(24, 24);
             this.btnSelectAll.TabIndex = 5;
@@ -143,9 +145,10 @@
             this.btnOpenTarget.AutoSize = true;
             this.btnOpenTarget.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpenTarget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenTarget.Location = new System.Drawing.Point(453, 63);
+            this.btnOpenTarget.Location = new System.Drawing.Point(580, 79);
+            this.btnOpenTarget.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenTarget.Name = "btnOpenTarget";
-            this.btnOpenTarget.Size = new System.Drawing.Size(26, 24);
+            this.btnOpenTarget.Size = new System.Drawing.Size(28, 27);
             this.btnOpenTarget.TabIndex = 9;
             this.btnOpenTarget.Text = "...";
             this.MainToolTip.SetToolTip(this.btnOpenTarget, "選擇目的資料夾");
@@ -158,9 +161,10 @@
             this.btnOpenSource.AutoSize = true;
             this.btnOpenSource.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpenSource.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenSource.Location = new System.Drawing.Point(453, 13);
+            this.btnOpenSource.Location = new System.Drawing.Point(580, 16);
+            this.btnOpenSource.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenSource.Name = "btnOpenSource";
-            this.btnOpenSource.Size = new System.Drawing.Size(26, 24);
+            this.btnOpenSource.Size = new System.Drawing.Size(28, 27);
             this.btnOpenSource.TabIndex = 2;
             this.btnOpenSource.Text = "...";
             this.MainToolTip.SetToolTip(this.btnOpenSource, "選擇來源資料夾");
@@ -173,7 +177,8 @@
             this.btnStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Image = global::MiniTool.Properties.Resources.start;
-            this.btnStart.Location = new System.Drawing.Point(159, 21);
+            this.btnStart.Location = new System.Drawing.Point(185, 26);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(83, 83);
             this.btnStart.TabIndex = 6;
@@ -185,9 +190,10 @@
             // 
             this.chkSyncName.AutoSize = true;
             this.chkSyncName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkSyncName.Location = new System.Drawing.Point(8, 55);
+            this.chkSyncName.Location = new System.Drawing.Point(9, 68);
+            this.chkSyncName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkSyncName.Name = "chkSyncName";
-            this.chkSyncName.Size = new System.Drawing.Size(117, 16);
+            this.chkSyncName.Size = new System.Drawing.Size(119, 19);
             this.chkSyncName.TabIndex = 3;
             this.chkSyncName.Text = "自訂名稱同步變動";
             this.MainToolTip.SetToolTip(this.chkSyncName, "此項若勾選，在列表中「自訂資料夾名稱」若\r\n有變動，會同步更新該項底下所有的名稱。\r\n\r\n若不勾選，則只會更新底下沒有自訂名稱的項\r\n目。");
@@ -208,14 +214,14 @@
             this.toolStripSeparator1,
             this.MenuViewExif});
             this.MoveListMenu.Name = "MoveListMenu";
-            this.MoveListMenu.Size = new System.Drawing.Size(188, 76);
+            this.MoveListMenu.Size = new System.Drawing.Size(185, 76);
             this.MoveListMenu.Opening += new System.ComponentModel.CancelEventHandler(this.MoveListMenu_Opening);
             // 
             // MenuSelectAll
             // 
             this.MenuSelectAll.Name = "MenuSelectAll";
             this.MenuSelectAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.MenuSelectAll.Size = new System.Drawing.Size(187, 22);
+            this.MenuSelectAll.Size = new System.Drawing.Size(184, 22);
             this.MenuSelectAll.Text = "全選";
             this.MenuSelectAll.Click += new System.EventHandler(this.MenuSelectAll_Click);
             // 
@@ -223,20 +229,20 @@
             // 
             this.MenuInvertSelect.Name = "MenuInvertSelect";
             this.MenuInvertSelect.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.MenuInvertSelect.Size = new System.Drawing.Size(187, 22);
+            this.MenuInvertSelect.Size = new System.Drawing.Size(184, 22);
             this.MenuInvertSelect.Text = "反向選擇";
             this.MenuInvertSelect.Click += new System.EventHandler(this.MenuInvertSelect_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(184, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
             // 
             // MenuViewExif
             // 
             this.MenuViewExif.Name = "MenuViewExif";
             this.MenuViewExif.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.MenuViewExif.Size = new System.Drawing.Size(187, 22);
+            this.MenuViewExif.Size = new System.Drawing.Size(184, 22);
             this.MenuViewExif.Text = "檢視完整Exif";
             this.MenuViewExif.Click += new System.EventHandler(this.MenuViewExif_Click);
             // 
@@ -272,7 +278,8 @@
             this.MenuAbout});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(784, 24);
+            this.MainMenu.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.MainMenu.Size = new System.Drawing.Size(915, 25);
             this.MainMenu.TabIndex = 1;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -287,14 +294,14 @@
             this.toolStripSeparator2,
             this.MenuEnd});
             this.MenuFile.Name = "MenuFile";
-            this.MenuFile.Size = new System.Drawing.Size(58, 20);
+            this.MenuFile.Size = new System.Drawing.Size(57, 19);
             this.MenuFile.Text = "檔案(&F)";
             // 
             // MenuOpenSource
             // 
             this.MenuOpenSource.Name = "MenuOpenSource";
             this.MenuOpenSource.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.MenuOpenSource.Size = new System.Drawing.Size(194, 22);
+            this.MenuOpenSource.Size = new System.Drawing.Size(191, 22);
             this.MenuOpenSource.Text = "選擇來源目錄";
             this.MenuOpenSource.Click += new System.EventHandler(this.OpenSourcePathClick);
             // 
@@ -302,7 +309,7 @@
             // 
             this.MenuOpenTarget.Name = "MenuOpenTarget";
             this.MenuOpenTarget.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.MenuOpenTarget.Size = new System.Drawing.Size(194, 22);
+            this.MenuOpenTarget.Size = new System.Drawing.Size(191, 22);
             this.MenuOpenTarget.Text = "選擇目的目錄";
             this.MenuOpenTarget.Click += new System.EventHandler(this.OpenTargetPathClick);
             // 
@@ -310,33 +317,33 @@
             // 
             this.MenuRun.Name = "MenuRun";
             this.MenuRun.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.MenuRun.Size = new System.Drawing.Size(194, 22);
+            this.MenuRun.Size = new System.Drawing.Size(191, 22);
             this.MenuRun.Text = "開始執行";
             this.MenuRun.Click += new System.EventHandler(this.StartClick);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(191, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(188, 6);
             // 
             // MenuRefresh
             // 
             this.MenuRefresh.Name = "MenuRefresh";
             this.MenuRefresh.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.MenuRefresh.Size = new System.Drawing.Size(194, 22);
+            this.MenuRefresh.Size = new System.Drawing.Size(191, 22);
             this.MenuRefresh.Text = "重新整理";
             this.MenuRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(191, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(188, 6);
             // 
             // MenuEnd
             // 
             this.MenuEnd.Name = "MenuEnd";
             this.MenuEnd.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.MenuEnd.Size = new System.Drawing.Size(194, 22);
+            this.MenuEnd.Size = new System.Drawing.Size(191, 22);
             this.MenuEnd.Text = "結束";
             this.MenuEnd.Click += new System.EventHandler(this.MenuEnd_Click);
             // 
@@ -347,7 +354,7 @@
             this.toolStripSeparator3,
             this.MenuSettings});
             this.MenuTool.Name = "MenuTool";
-            this.MenuTool.Size = new System.Drawing.Size(59, 20);
+            this.MenuTool.Size = new System.Drawing.Size(58, 19);
             this.MenuTool.Text = "工具(&T)";
             // 
             // MenuFunction
@@ -357,7 +364,7 @@
             this.MenuYearType,
             this.MenuIsSync});
             this.MenuFunction.Name = "MenuFunction";
-            this.MenuFunction.Size = new System.Drawing.Size(128, 22);
+            this.MenuFunction.Size = new System.Drawing.Size(125, 22);
             this.MenuFunction.Text = "快速功能";
             // 
             // MenuMoveType
@@ -366,7 +373,7 @@
             this.MenuIsCopy,
             this.MenuIsMove});
             this.MenuMoveType.Name = "MenuMoveType";
-            this.MenuMoveType.Size = new System.Drawing.Size(163, 22);
+            this.MenuMoveType.Size = new System.Drawing.Size(160, 22);
             this.MenuMoveType.Text = "移動方式";
             // 
             // MenuIsCopy
@@ -374,7 +381,7 @@
             this.MenuIsCopy.CheckOnClick = true;
             this.MenuIsCopy.Name = "MenuIsCopy";
             this.MenuIsCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.MenuIsCopy.Size = new System.Drawing.Size(144, 22);
+            this.MenuIsCopy.Size = new System.Drawing.Size(141, 22);
             this.MenuIsCopy.Text = "複製";
             this.MenuIsCopy.Click += new System.EventHandler(this.CopyTypeClick);
             // 
@@ -383,7 +390,7 @@
             this.MenuIsMove.CheckOnClick = true;
             this.MenuIsMove.Name = "MenuIsMove";
             this.MenuIsMove.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M)));
-            this.MenuIsMove.Size = new System.Drawing.Size(144, 22);
+            this.MenuIsMove.Size = new System.Drawing.Size(141, 22);
             this.MenuIsMove.Text = "移動";
             this.MenuIsMove.Click += new System.EventHandler(this.MoveTypeClick);
             // 
@@ -393,7 +400,7 @@
             this.MenuYear3,
             this.MenuYear4});
             this.MenuYearType.Name = "MenuYearType";
-            this.MenuYearType.Size = new System.Drawing.Size(163, 22);
+            this.MenuYearType.Size = new System.Drawing.Size(160, 22);
             this.MenuYearType.Text = "年份表示";
             // 
             // MenuYear3
@@ -401,7 +408,7 @@
             this.MenuYear3.CheckOnClick = true;
             this.MenuYear3.Name = "MenuYear3";
             this.MenuYear3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
-            this.MenuYear3.Size = new System.Drawing.Size(151, 22);
+            this.MenuYear3.Size = new System.Drawing.Size(148, 22);
             this.MenuYear3.Text = "民國年";
             this.MenuYear3.Click += new System.EventHandler(this.Year3Click);
             // 
@@ -410,7 +417,7 @@
             this.MenuYear4.CheckOnClick = true;
             this.MenuYear4.Name = "MenuYear4";
             this.MenuYear4.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D4)));
-            this.MenuYear4.Size = new System.Drawing.Size(151, 22);
+            this.MenuYear4.Size = new System.Drawing.Size(148, 22);
             this.MenuYear4.Text = "西元年";
             this.MenuYear4.Click += new System.EventHandler(this.Year4Click);
             // 
@@ -419,7 +426,7 @@
             this.MenuIsSync.CheckOnClick = true;
             this.MenuIsSync.Name = "MenuIsSync";
             this.MenuIsSync.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.MenuIsSync.Size = new System.Drawing.Size(163, 22);
+            this.MenuIsSync.Size = new System.Drawing.Size(160, 22);
             this.MenuIsSync.Text = "同步變動";
             this.MenuIsSync.ToolTipText = "同步變動資料夾自訂名稱";
             this.MenuIsSync.Click += new System.EventHandler(this.MenuIsSync_Click);
@@ -427,20 +434,20 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(122, 6);
             // 
             // MenuSettings
             // 
             this.MenuSettings.Name = "MenuSettings";
             this.MenuSettings.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.MenuSettings.Size = new System.Drawing.Size(128, 22);
+            this.MenuSettings.Size = new System.Drawing.Size(125, 22);
             this.MenuSettings.Text = "設定";
             this.MenuSettings.Click += new System.EventHandler(this.MenuSettings_Click);
             // 
             // MenuAbout
             // 
             this.MenuAbout.Name = "MenuAbout";
-            this.MenuAbout.Size = new System.Drawing.Size(60, 20);
+            this.MenuAbout.Size = new System.Drawing.Size(59, 19);
             this.MenuAbout.Text = "關於(&A)";
             this.MenuAbout.Click += new System.EventHandler(this.MenuAbout_Click);
             // 
@@ -449,27 +456,29 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusBar,
             this.StatusText});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 540);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 676);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(784, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(915, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // StatusBar
             // 
             this.StatusBar.Name = "StatusBar";
-            this.StatusBar.Size = new System.Drawing.Size(100, 16);
+            this.StatusBar.Size = new System.Drawing.Size(117, 20);
             // 
             // StatusText
             // 
             this.StatusText.Name = "StatusText";
-            this.StatusText.Size = new System.Drawing.Size(0, 17);
+            this.StatusText.Size = new System.Drawing.Size(0, 21);
             // 
             // MainSplitContainer
             // 
             this.MainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainSplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.MainSplitContainer.Location = new System.Drawing.Point(0, 24);
+            this.MainSplitContainer.Location = new System.Drawing.Point(0, 25);
+            this.MainSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MainSplitContainer.Name = "MainSplitContainer";
             this.MainSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -480,8 +489,9 @@
             // MainSplitContainer.Panel2
             // 
             this.MainSplitContainer.Panel2.Controls.Add(this.FileListView);
-            this.MainSplitContainer.Size = new System.Drawing.Size(784, 516);
+            this.MainSplitContainer.Size = new System.Drawing.Size(915, 651);
             this.MainSplitContainer.SplitterDistance = 123;
+            this.MainSplitContainer.SplitterWidth = 5;
             this.MainSplitContainer.TabIndex = 3;
             // 
             // TopSplitContainer
@@ -489,6 +499,7 @@
             this.TopSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TopSplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.TopSplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.TopSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TopSplitContainer.Name = "TopSplitContainer";
             // 
             // TopSplitContainer.Panel1
@@ -498,8 +509,9 @@
             // TopSplitContainer.Panel2
             // 
             this.TopSplitContainer.Panel2.Controls.Add(this.groupBox2);
-            this.TopSplitContainer.Size = new System.Drawing.Size(784, 123);
-            this.TopSplitContainer.SplitterDistance = 485;
+            this.TopSplitContainer.Size = new System.Drawing.Size(915, 123);
+            this.TopSplitContainer.SplitterDistance = 615;
+            this.TopSplitContainer.SplitterWidth = 5;
             this.TopSplitContainer.TabIndex = 0;
             // 
             // groupBox1
@@ -516,8 +528,10 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(485, 123);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(615, 123);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "資料夾設定";
@@ -527,26 +541,28 @@
             this.txtTargetPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTargetPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTargetPath.Location = new System.Drawing.Point(95, 65);
+            this.txtTargetPath.Location = new System.Drawing.Point(111, 82);
+            this.txtTargetPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTargetPath.Name = "txtTargetPath";
             this.txtTargetPath.ReadOnly = true;
-            this.txtTargetPath.Size = new System.Drawing.Size(352, 22);
+            this.txtTargetPath.Size = new System.Drawing.Size(459, 23);
             this.txtTargetPath.TabIndex = 8;
             this.txtTargetPath.TextChanged += new System.EventHandler(this.txtTargetPath_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Location = new System.Drawing.Point(14, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.Size = new System.Drawing.Size(79, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "目的資料夾：";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MiniTool.Properties.Resources.down;
-            this.pictureBox2.Location = new System.Drawing.Point(247, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(288, 53);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -557,9 +573,10 @@
             // 
             this.radioCopy.AutoSize = true;
             this.radioCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioCopy.Location = new System.Drawing.Point(117, 43);
+            this.radioCopy.Location = new System.Drawing.Point(136, 53);
+            this.radioCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioCopy.Name = "radioCopy";
-            this.radioCopy.Size = new System.Drawing.Size(46, 16);
+            this.radioCopy.Size = new System.Drawing.Size(48, 19);
             this.radioCopy.TabIndex = 5;
             this.radioCopy.TabStop = true;
             this.radioCopy.Text = "複製";
@@ -571,9 +588,10 @@
             // 
             this.radioMove.AutoSize = true;
             this.radioMove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioMove.Location = new System.Drawing.Point(194, 43);
+            this.radioMove.Location = new System.Drawing.Point(226, 53);
+            this.radioMove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioMove.Name = "radioMove";
-            this.radioMove.Size = new System.Drawing.Size(46, 16);
+            this.radioMove.Size = new System.Drawing.Size(48, 19);
             this.radioMove.TabIndex = 4;
             this.radioMove.TabStop = true;
             this.radioMove.Text = "移動";
@@ -584,7 +602,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MiniTool.Properties.Resources.down;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(111, 53);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -596,19 +615,20 @@
             this.txtSourcePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSourcePath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSourcePath.Location = new System.Drawing.Point(95, 15);
+            this.txtSourcePath.Location = new System.Drawing.Point(111, 19);
+            this.txtSourcePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSourcePath.Name = "txtSourcePath";
             this.txtSourcePath.ReadOnly = true;
-            this.txtSourcePath.Size = new System.Drawing.Size(352, 22);
+            this.txtSourcePath.Size = new System.Drawing.Size(459, 23);
             this.txtSourcePath.TabIndex = 1;
             this.txtSourcePath.TextChanged += new System.EventHandler(this.txtSourcePath_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(14, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "來源資料夾：";
             // 
@@ -623,7 +643,9 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Size = new System.Drawing.Size(295, 123);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -633,9 +655,10 @@
             // 
             this.radioYear4.AutoSize = true;
             this.radioYear4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioYear4.Location = new System.Drawing.Point(73, 33);
+            this.radioYear4.Location = new System.Drawing.Point(85, 41);
+            this.radioYear4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioYear4.Name = "radioYear4";
-            this.radioYear4.Size = new System.Drawing.Size(58, 16);
+            this.radioYear4.Size = new System.Drawing.Size(60, 19);
             this.radioYear4.TabIndex = 2;
             this.radioYear4.TabStop = true;
             this.radioYear4.Text = "西元年";
@@ -647,9 +670,10 @@
             // 
             this.radioYear3.AutoSize = true;
             this.radioYear3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioYear3.Location = new System.Drawing.Point(8, 33);
+            this.radioYear3.Location = new System.Drawing.Point(9, 41);
+            this.radioYear3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioYear3.Name = "radioYear3";
-            this.radioYear3.Size = new System.Drawing.Size(58, 16);
+            this.radioYear3.Size = new System.Drawing.Size(60, 19);
             this.radioYear3.TabIndex = 1;
             this.radioYear3.TabStop = true;
             this.radioYear3.Text = "民國年";
@@ -660,9 +684,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 18);
+            this.label3.Location = new System.Drawing.Point(7, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 12);
+            this.label3.Size = new System.Drawing.Size(127, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "目的資料夾年份格式：";
             // 
@@ -675,9 +699,10 @@
             this.FileListView.HideSelection = false;
             this.FileListView.LabelWrap = false;
             this.FileListView.Location = new System.Drawing.Point(0, 0);
+            this.FileListView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FileListView.Name = "FileListView";
             this.FileListView.ShowItemToolTips = true;
-            this.FileListView.Size = new System.Drawing.Size(784, 389);
+            this.FileListView.Size = new System.Drawing.Size(915, 523);
             this.FileListView.SmallImageList = this.MoveImageList;
             this.FileListView.TabIndex = 0;
             this.FileListView.UseCompatibleStateImageBehavior = false;
@@ -687,24 +712,27 @@
             // cboxFolderPrefix
             // 
             this.cboxFolderPrefix.FormattingEnabled = true;
-            this.cboxFolderPrefix.Location = new System.Drawing.Point(453, 541);
+            this.cboxFolderPrefix.Location = new System.Drawing.Point(528, 676);
+            this.cboxFolderPrefix.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboxFolderPrefix.Name = "cboxFolderPrefix";
-            this.cboxFolderPrefix.Size = new System.Drawing.Size(121, 20);
+            this.cboxFolderPrefix.Size = new System.Drawing.Size(140, 23);
             this.cboxFolderPrefix.TabIndex = 4;
             this.cboxFolderPrefix.Visible = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(915, 702);
             this.Controls.Add(this.cboxFolderPrefix);
             this.Controls.Add(this.MainSplitContainer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.MainMenu);
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MainMenu;
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(931, 740);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "迷你照片小工具";

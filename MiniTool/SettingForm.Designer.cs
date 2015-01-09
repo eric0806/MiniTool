@@ -42,9 +42,10 @@
             // chkLoadRAW
             // 
             this.chkLoadRAW.AutoSize = true;
-            this.chkLoadRAW.Location = new System.Drawing.Point(12, 12);
+            this.chkLoadRAW.Location = new System.Drawing.Point(14, 15);
+            this.chkLoadRAW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkLoadRAW.Name = "chkLoadRAW";
-            this.chkLoadRAW.Size = new System.Drawing.Size(120, 16);
+            this.chkLoadRAW.Size = new System.Drawing.Size(122, 19);
             this.chkLoadRAW.TabIndex = 0;
             this.chkLoadRAW.Text = "讀取所有格式圖片";
             this.toolTip1.SetToolTip(this.chkLoadRAW, "取消選取則僅會讀取JPG格式。");
@@ -53,10 +54,12 @@
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOK.AutoSize = true;
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(218, 148);
+            this.btnOK.Location = new System.Drawing.Point(254, 185);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(87, 29);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "確定";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -65,10 +68,12 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.AutoSize = true;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(299, 148);
+            this.btnCancel.Location = new System.Drawing.Point(349, 185);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(87, 29);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -77,9 +82,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(10, 31);
+            this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(353, 12);
+            this.label1.Size = new System.Drawing.Size(355, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "本功能不確定是否完全支援所有圖片格式，若有錯誤請取消勾選。";
             // 
@@ -92,18 +97,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 52);
+            this.label2.Location = new System.Drawing.Point(12, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 12);
+            this.label2.Size = new System.Drawing.Size(203, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "若您相機的RAW檔無法顯示，請安裝";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(210, 52);
+            this.linkLabel1.Location = new System.Drawing.Point(221, 65);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(76, 12);
+            this.linkLabel1.Size = new System.Drawing.Size(92, 15);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "MS CodecPack";
@@ -112,34 +117,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 89);
+            this.label3.Location = new System.Drawing.Point(14, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 12);
+            this.label3.Size = new System.Drawing.Size(102, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "GPS地圖縮放層級";
             // 
             // MapZoomBar
             // 
-            this.MapZoomBar.Location = new System.Drawing.Point(115, 89);
+            this.MapZoomBar.Location = new System.Drawing.Point(134, 112);
+            this.MapZoomBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MapZoomBar.Maximum = 21;
             this.MapZoomBar.Name = "MapZoomBar";
-            this.MapZoomBar.Size = new System.Drawing.Size(178, 45);
+            this.MapZoomBar.Size = new System.Drawing.Size(208, 45);
             this.MapZoomBar.TabIndex = 7;
             this.MapZoomBar.ValueChanged += new System.EventHandler(this.MapZoomBar_ValueChanged);
             // 
             // lblBarValue
             // 
             this.lblBarValue.AutoSize = true;
-            this.lblBarValue.Location = new System.Drawing.Point(299, 89);
+            this.lblBarValue.Location = new System.Drawing.Point(349, 112);
             this.lblBarValue.Name = "lblBarValue";
-            this.lblBarValue.Size = new System.Drawing.Size(0, 12);
+            this.lblBarValue.Size = new System.Drawing.Size(0, 15);
             this.lblBarValue.TabIndex = 8;
             // 
             // SettingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 183);
+            this.ClientSize = new System.Drawing.Size(450, 229);
             this.Controls.Add(this.lblBarValue);
             this.Controls.Add(this.MapZoomBar);
             this.Controls.Add(this.label3);
@@ -149,7 +155,9 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.chkLoadRAW);
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SettingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "  設定";

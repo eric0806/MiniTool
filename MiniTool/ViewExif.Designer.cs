@@ -62,6 +62,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainSplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.MainSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MainSplitContainer.Name = "MainSplitContainer";
             // 
             // MainSplitContainer.Panel1
@@ -71,8 +72,9 @@
             // MainSplitContainer.Panel2
             // 
             this.MainSplitContainer.Panel2.Controls.Add(this.ExifSplitContainer);
-            this.MainSplitContainer.Size = new System.Drawing.Size(511, 579);
-            this.MainSplitContainer.SplitterDistance = 199;
+            this.MainSplitContainer.Size = new System.Drawing.Size(596, 724);
+            this.MainSplitContainer.SplitterDistance = 232;
+            this.MainSplitContainer.SplitterWidth = 5;
             this.MainSplitContainer.TabIndex = 0;
             // 
             // FileListView
@@ -83,8 +85,9 @@
             this.FileListView.DoubleClickActivation = false;
             this.FileListView.HideSelection = false;
             this.FileListView.Location = new System.Drawing.Point(0, 0);
+            this.FileListView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FileListView.Name = "FileListView";
-            this.FileListView.Size = new System.Drawing.Size(199, 579);
+            this.FileListView.Size = new System.Drawing.Size(232, 724);
             this.FileListView.SmallImageList = this.FileImageList;
             this.FileListView.TabIndex = 0;
             this.FileListView.UseCompatibleStateImageBehavior = false;
@@ -108,6 +111,7 @@
             this.ExifSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ExifSplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.ExifSplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.ExifSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ExifSplitContainer.Name = "ExifSplitContainer";
             this.ExifSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -118,8 +122,9 @@
             // ExifSplitContainer.Panel2
             // 
             this.ExifSplitContainer.Panel2.Controls.Add(this.ExifListView);
-            this.ExifSplitContainer.Size = new System.Drawing.Size(308, 579);
+            this.ExifSplitContainer.Size = new System.Drawing.Size(359, 724);
             this.ExifSplitContainer.SplitterDistance = 231;
+            this.ExifSplitContainer.SplitterWidth = 5;
             this.ExifSplitContainer.TabIndex = 0;
             // 
             // groupBox1
@@ -127,8 +132,10 @@
             this.groupBox1.Controls.Add(this.ThumbBox);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(308, 231);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(359, 231);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "縮圖";
@@ -136,9 +143,10 @@
             // ThumbBox
             // 
             this.ThumbBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ThumbBox.Location = new System.Drawing.Point(3, 18);
+            this.ThumbBox.Location = new System.Drawing.Point(3, 20);
+            this.ThumbBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ThumbBox.Name = "ThumbBox";
-            this.ThumbBox.Size = new System.Drawing.Size(302, 210);
+            this.ThumbBox.Size = new System.Drawing.Size(353, 207);
             this.ThumbBox.TabIndex = 0;
             this.ThumbBox.TabStop = false;
             this.ThumbBox.SizeChanged += new System.EventHandler(this.ThumbBox_SizeChanged);
@@ -154,9 +162,10 @@
             this.ExifListView.GridLines = true;
             this.ExifListView.HideSelection = false;
             this.ExifListView.Location = new System.Drawing.Point(0, 0);
+            this.ExifListView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ExifListView.Name = "ExifListView";
             this.ExifListView.ShowItemToolTips = true;
-            this.ExifListView.Size = new System.Drawing.Size(308, 344);
+            this.ExifListView.Size = new System.Drawing.Size(359, 488);
             this.ExifListView.TabIndex = 0;
             this.ExifListView.UseCompatibleStateImageBehavior = false;
             this.ExifListView.View = System.Windows.Forms.View.Details;
@@ -184,18 +193,20 @@
             // 
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 585);
+            this.panel1.Location = new System.Drawing.Point(0, 731);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(511, 29);
+            this.panel1.Size = new System.Drawing.Size(596, 37);
             this.panel1.TabIndex = 1;
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnClose.Location = new System.Drawing.Point(424, 3);
+            this.btnClose.Location = new System.Drawing.Point(495, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(87, 29);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "關閉";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -210,9 +221,10 @@
             this.MapBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MapBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("MapBox.ErrorImage")));
             this.MapBox.InitialImage = global::MiniTool.Properties.Resources.loading16;
-            this.MapBox.Location = new System.Drawing.Point(103, 132);
+            this.MapBox.Location = new System.Drawing.Point(120, 165);
+            this.MapBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MapBox.Name = "MapBox";
-            this.MapBox.Size = new System.Drawing.Size(300, 300);
+            this.MapBox.Size = new System.Drawing.Size(350, 374);
             this.MapBox.TabIndex = 2;
             this.MapBox.TabStop = false;
             this.MapBox.Visible = false;
@@ -228,14 +240,16 @@
             // 
             // ViewExif
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(511, 614);
+            this.ClientSize = new System.Drawing.Size(596, 768);
             this.Controls.Add(this.MapBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainSplitContainer);
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ViewExif";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "檢視Exif";
