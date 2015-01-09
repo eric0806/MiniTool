@@ -476,8 +476,11 @@ namespace MiniTool
                     foreach (FileInfo file in dir.GetFiles()) {
                         ShellFile sf = ShellFile.FromFilePath(file.FullName);
                         if (Config.GetConfig("ReadRAW") == "1") {
-                            if (sf.Properties.System.Kind.Value == null) { continue; }
-                            if (sf.Properties.System.Kind.Value[0] != "picture") { continue; }
+                            try {
+                                if (sf.Properties.System.Kind.Value == null) { continue; }
+                                if (sf.Properties.System.Kind.Value[0] != "picture") { continue; }
+                            }
+                            catch { continue; }
                         }
                         else {
                             if (file.Extension.ToLower() != ".jpg") { continue; }
