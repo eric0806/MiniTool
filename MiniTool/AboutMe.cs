@@ -19,8 +19,8 @@ namespace MiniTool
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelMemo1.Text = "若有疑問，歡迎來信:erika.tw@gmail.com";
             this.labelMemo1.Links.Add(10, labelMemo1.Text.Length - 10, "mailto:erika.tw@gmail.com?subject=對於MiniTool " + AssemblyVersion + " 版本的問題或意見");
-            this.labelMemo2.Text = "程式首頁:http://code.google.com/p/project-minitool/";
-            this.labelMemo2.Links.Add(5, labelMemo2.Text.Length - 5, "http://code.google.com/p/project-minitool/");
+            this.labelMemo2.Text = "程式首頁:https://github.com/eric0806/MiniTool";
+            this.labelMemo2.Links.Add(5, labelMemo2.Text.Length - 5, "https://github.com/eric0806/MiniTool");
             this.textBoxDescription.Text = ChangeLog;
         }
 
